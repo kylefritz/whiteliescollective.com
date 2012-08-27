@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>White Lies Collective</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -11,11 +10,22 @@
     <link rel="stylesheet" href="https://d1eiylix7lbou2.cloudfront.net/ffe/vendor/bootstrap-2.0.2/css/bootstrap.min.css">
     <style>
       h1,h2,h3,h4{
-        font-family: 'Chivo', sans-serif; 
+        font-family: 'Chivo', sans-serif;
         color: #E0D3D9;
         text-transform: uppercase;
+
+        -webkit-transition: color 300ms ease-in-out;
+        -moz-transition: color 300ms ease-in-out;
+        -ms-transition: color 300ms ease-in-out;
+        -o-transition: color 300ms ease-in-out;
+        transition: color 300ms ease-in-out;
       }
-      h1{font-size: 50px;}
+      h1{
+        font-size: 50px;
+      }
+      .baltimore{
+        font-size: 30px;
+      }
       body{
         width: 800px;
         margin: 110px auto;
@@ -23,16 +33,23 @@
         text-align: center;
         background-color: #DBD0D5;
       }
+      h1:hover{
+        color:#E9D9D9;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>White Lies Collective</h1>
+      <h1>White Lies Collective
       <br/>
       <br/>
-      <h3>Baltimore, MD</h3>
+      <span class="baltimore">Baltimore, MD</span></h1>
     </header>
     <footer>
     </footer>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   </body>
 </html>
